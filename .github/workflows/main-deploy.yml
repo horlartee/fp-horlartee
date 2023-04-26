@@ -34,10 +34,10 @@ jobs:
     steps:
       # Droplets already have docker, doctl + auth, and curl installed
       - name: Deploy api to DigitalOcean Droplet
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DO_NOTIFICATION_HOST }}
-          username: root
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
@@ -71,10 +71,10 @@ jobs:
     steps:
       # Droplets already have docker, doctl + auth, and curl installed
       - name: Deploy api to DigitalOcean Droplet
-        uses: appleboy/ssh-action@v0.1.4
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DO_STORAGE_HOST }}
-          username: root
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
