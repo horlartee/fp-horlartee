@@ -66,7 +66,7 @@ jobs:
             curl --silent --fail http://localhost/health
 
   deploy-storage-service:
-    needs: deploy-api-1 # rolling deploy
+    needs: deploy-notification-service # rolling deploy
     runs-on: ubuntu-latest
     steps:
       # Droplets already have docker, doctl + auth, and curl installed
