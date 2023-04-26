@@ -1,0 +1,23 @@
+{
+  "name": "fp-horlartee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horlartee/fp-horlartee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horlartee/fp-horlartee/issues"
+  },
+  "homepage": "https://github.com/horlartee/fp-horlartee#readme",
+  "dependencies": {
+    "fastify": "^3.29.5"
+  }
+}
