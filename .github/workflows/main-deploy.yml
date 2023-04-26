@@ -38,7 +38,7 @@ jobs:
         with:
           host: ${{ secrets.DO_NOTIFICATION_HOST }}
           username: root
-          key: ${{ secrets.DO_API_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
             doctl registry login --expiry-seconds 180
@@ -75,7 +75,7 @@ jobs:
         with:
           host: ${{ secrets.DO_STORAGE_HOST }}
           username: root
-          key: ${{ secrets.DO_API_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
             doctl registry login --expiry-seconds 180
